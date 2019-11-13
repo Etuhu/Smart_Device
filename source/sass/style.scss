@@ -1,3 +1,24 @@
-h1 {
-  color: red;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "common.scss";
+@import "blocks/about.scss";
+@import "blocks/features.scss";
+@import "blocks/main-title.scss";
+@import "blocks/office-contacts.scss";
+@import "blocks/products.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/advantages.scss";
+@import "blocks/feedback.scss";
+@import "blocks/menu-toggle.scss";
+@import "blocks/page-content.scss";
+@import "blocks/promo-block.scss";
+@import "blocks/contacts-menu.scss";
+@import "blocks/footer-bottom.scss";
+@import "blocks/navigation.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/container.scss";
+@import "blocks/logo.scss";
+@import "blocks/offers.scss";
+@import "blocks/page-header.scss";
+@import "blocks/social.scss";

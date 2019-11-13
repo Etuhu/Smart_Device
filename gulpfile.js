@@ -24,15 +24,15 @@ gulp.task("css", function() {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function() {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -69,7 +69,7 @@ gulp.task("sprite", function() {
     .src("source/img/{icon-*,htmlacademy*}.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function() {

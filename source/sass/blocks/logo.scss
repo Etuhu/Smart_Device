@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 250px;
+  margin-left: 6px;
+  margin-top: 3px;
+}
+
+.logo img {
+  display: block;
+  width: 52px;
+  height: 52px;
+}
+
+.logo__description {
+  display: block;
+  margin: 0;
+  margin-left: 16px;
+  padding-top: 10px;
+}
+
+.logo__description-item {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0;
+  line-height: 0;
+}
