@@ -1,0 +1,44 @@
+.about__container.container {
+  width: 82.5%;
+  max-width: 1160px;
+  padding-left: 184px;
+  padding-top: 76px;
+  padding-bottom: 50px;
+  padding-right: 5px;
+
+  background-image: url("../../img/year@1x.png");
+  background-repeat: no-repeat;
+  background-position: -27px 81px;
+}
+
+.about__title {
+  @include basic-title;
+  color: $basic-grey-text;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.about__button {
+  width: 179px;
+  margin-top: 17px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  border: 1px solid $basic-blue-color;
+  color: $basic-blue-text;
+  outline: none;
+    &:hover,
+    &:focus {
+      background-color: $basic-blue-color;
+      color: $basic-white-text;
+    }
+    &:active {
+      background-color: $basic-blue-color;
+      color: $basic-white-text;
+      opacity: 0.6;
+    }
+}

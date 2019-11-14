@@ -7,21 +7,40 @@
 
 .features__item {
   width: 48.7%;
-  // max-width: 570px;
   min-height: 299px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $basic-blue-color;
-  // margin-right: 2.7%;
-  margin-bottom: 30px;
-  padding-top: 90px;
+  margin-bottom: 29px;
+  padding-top: 39px;
   padding-bottom: 50px;
-  padding-left: 2%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
   background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $basic-blue-color;
+      color: $basic-white-text;
+    }
 }
 
 .features__item:first-child,
 .features__item:nth-child(3n) {
   margin-right: 2.6%;
+}
+
+.features__icon {
+  margin-bottom: 14px;
+}
+
+.features__item:hover .features__icon path,
+.features__item:focus .features__icon path {
+  fill: #ffffff;
+}
+
+.features__item--privacy {
+  padding-top: 43px;
 }
 
 .features__title {
@@ -39,4 +58,11 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey-text;
+}
+
+.features__item:hover .features__title,
+.features__item:focus .features__title,
+.features__item:hover .features__description,
+.features__item:focus .features__description {
+  color: $basic-white-text;
 }
