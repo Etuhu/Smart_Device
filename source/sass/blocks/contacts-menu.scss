@@ -17,10 +17,29 @@
   line-height: 18px;
   color: $basic-white-text;
   text-decoration: none;
+  outline: none;
 }
 
 .contacts-menu__item--call {
   margin-left: 7.6%;
+}
+
+.contacts-menu__item:hover .contacts-menu__text,
+.contacts-menu__item:focus .contacts-menu__text {
+  border-bottom: 1px solid #ffffff;
+}
+
+.contacts-menu__item:active .contacts-menu__text {
+  opacity: 0.6;;
+}
+
+.contacts-menu__item:hover .contacts-menu__icon path,
+.contacts-menu__item:focus .contacts-menu__icon path {
+  fill: #ffffff;
+}
+
+.contacts-menu__item:active .contacts-menu__icon path {
+  opacity: 0.6;;
 }
 
 .contacts-menu__text {
@@ -47,6 +66,15 @@
   width: 180px;
   padding-top: 15px;
   padding-bottom: 12px;
-
   text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: #1b2d37;
+    }
+    &:active {
+      background-color: #ffffff;
+      color: #1b2d37;
+      opacity: 0.6;
+    }
 }
