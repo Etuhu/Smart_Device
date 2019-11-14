@@ -1,0 +1,34 @@
+.promo-block {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.promo-block__title {
+  margin-bottom: 44px;
+}
+
+.promo-block__button {
+  width: 407px;
+  margin-left: 115px;
+  padding: 18px 0;
+  border: 0;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  background-color: $basic-blue-color;
+}
+
+.promo-block__note {
+  position: absolute;
+  bottom: -98px;
+  left: -17px;
+
+  display: block;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+
+  transform: rotate(270deg);
+}

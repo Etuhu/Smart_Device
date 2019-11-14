@@ -1,4 +1,31 @@
 .page-header {
   padding-top: 30px;
-  background-color: #1B2D37;
+  background: url("../../img/boards@1x.png") 86.6% 71% no-repeat,
+    // url("../../img/boards@1x.png") 1038px 258px no-repeat,
+      url("../../img/triangle-small.svg") 1054px 475px no-repeat,
+    url("../../img/triangle-large.svg") 1106px 277px no-repeat, url("../../img/dot.svg") 1102px 272px no-repeat, url("../../img/dot.svg") 1652px 272px no-repeat, url("../../img/dot.svg") 1377px 748px no-repeat, url("../../img/dot.svg") 1212px 749px no-repeat, url("../../img/dot.svg") 1051px 471px no-repeat,
+    // url("../../img/triangle-small.svg") 66.8% 79.5% no-repeat,
+      // url("../../img/triangle-large.svg") 81.9% 69.3% no-repeat,
+      url("../../img/promo-bg@1x.png") 0 0 no-repeat,
+    #1b2d37;
+}
+
+.page-header__container {
+  padding-bottom: 225px;
+}
+
+.page-header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 222px;
+}
+
+.page-header__logo-link {
+  margin-left: 21px;
+  margin-top: 3px;
+}
+
+.page-header__promo {
+  max-width: 800px;
 }

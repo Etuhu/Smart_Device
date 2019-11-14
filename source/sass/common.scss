@@ -40,8 +40,22 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// .button {
-// }
+.button {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white-text;
+  text-align: center;
+  text-decoration: none;
+}
 
 @mixin basic-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;

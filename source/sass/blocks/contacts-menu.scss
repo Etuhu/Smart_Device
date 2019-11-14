@@ -1,0 +1,52 @@
+.contacts-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-grow: 1;
+  max-width: 82%;
+  padding-top: 7px;
+  padding-left: 30px;
+}
+
+.contacts-menu__item {
+  display: flex;
+  padding-top: 13px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-white-text;
+  text-decoration: none;
+}
+
+.contacts-menu__item--call {
+  margin-left: 7.6%;
+}
+
+.contacts-menu__text {
+  margin: 0;
+}
+
+.contacts-menu__icon {
+  display: block;
+  margin-right: 20px;
+}
+
+.contacts-menu__icon--email {
+  padding-top: 2px;
+}
+
+.contacts-menu__icon--call {
+  margin-right: 16px;
+}
+
+.contacts-menu__button {
+  display: inline-block;
+  margin-left: 4.3%;
+  margin-right: 8px;
+  width: 180px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+
+  text-decoration: none;
+}

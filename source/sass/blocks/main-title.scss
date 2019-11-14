@@ -1,0 +1,42 @@
+.main-title {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.main-title__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-title__item--basic {
+  margin-bottom: 27px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $basic-white-text;
+}
+
+.main-title__item--sup {
+  position: relative;
+  padding-left: 97px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+
+  color: $basic-white-text;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 3px;
+      top: 17px;
+
+      width: 66px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+}
