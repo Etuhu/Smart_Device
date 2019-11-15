@@ -187,22 +187,25 @@
       </section>
       <section class="feedback wrapper">
         <div class="feedback__container container">
-          <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
-          <span class="feedback__note">Мы проконсультируем Вас бесплатно</span>
-          <form action="https://echo.htmlacademy.ru" class="feedback__form" method="post">
-            <div class="feedback__text-field feedback__text-field--username">
-              <input type="text" placeholder="Имя" name="username" required="required">
+          <div class="feedback__image"></div>
+          <div class="feedback__content">
+            <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+            <span class="feedback__note">Мы проконсультируем Вас бесплатно</span>
+            <form action="https://echo.htmlacademy.ru" class="feedback__form" method="post">
+              <div class="feedback__text-field feedback__text-field--username">
+                <input type="text" placeholder="Имя" name="username" required="required">
+              </div>
+              <div class="feedback__text-field feedback__text-field--phonenumber">
+                <input type="tel" placeholder="Телефон" name="phonenumber" required="required">
+              </div>
+              <textarea name="question" placeholder="Ваш вопрос" required="required"></textarea>
+              <button type="submit">ЗАДАТЬ ВОПРОС</button>
+              <div class="feedback__consent">
+                <input type="checkbox" name="consent" value="Согласен" id="consent" checked="checked">
+                <label for="consent">Я согласен на обработку персональных данных</label>
+              </div>
+            </form>
             </div>
-            <div class="feedback__text-field feedback__text-field--phonenumber">
-              <input type="tel" placeholder="Телефон" name="phonenumber">
-            </div>
-            <textarea name="question" placeholder="Ваш вопрос"></textarea>
-            <button type="submit">ЗАДАТЬ ВОПРОС</button>
-            <div class="feedback__consent">
-              <input type="checkbox" name="consent" value="Согласен" id="consent" checked="checked">
-              <label for="consent">Я согласен на обработку персональных данных</label>
-            </div>
-          </form>
         </div>
       </section>
     </main>
