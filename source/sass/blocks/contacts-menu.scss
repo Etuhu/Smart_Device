@@ -12,7 +12,6 @@
 .contacts-menu__item {
   display: flex;
   padding-top: 13px;
-
   font-size: 16px;
   line-height: 18px;
   color: $basic-white-text;
@@ -30,16 +29,18 @@
 }
 
 .contacts-menu__item:active .contacts-menu__text {
-  opacity: 0.6;;
+  opacity: 0.6;
 }
 
 .contacts-menu__item:hover .contacts-menu__icon path,
 .contacts-menu__item:focus .contacts-menu__icon path {
   fill: #ffffff;
+  transition: fill 0.5s ease;
 }
 
 .contacts-menu__item:active .contacts-menu__icon path {
-  opacity: 0.6;;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
 }
 
 .contacts-menu__text {
@@ -67,14 +68,16 @@
   padding-top: 15px;
   padding-bottom: 12px;
   text-decoration: none;
-    &:hover,
-    &:focus {
-      background-color: #ffffff;
-      color: #1b2d37;
-    }
-    &:active {
-      background-color: #ffffff;
-      color: #1b2d37;
-      opacity: 0.6;
-    }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #1b2d37;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #1b2d37;
+    opacity: 0.6;
+  }
 }

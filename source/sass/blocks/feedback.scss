@@ -68,12 +68,14 @@
 .feedback__text-field input:hover,
 .feedback__form textarea:hover {
   background-color: #38c3ff;
+  transition: background-color 0.5s ease;
 }
 
 .feedback__text-field input:focus,
 .feedback__form textarea:focus {
   background-color: #f5f5f5;
   color: $basic-grey-text;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .feedback__form textarea {
@@ -103,7 +105,6 @@
   padding: 0 10px;
   padding-top: 14px;
   padding-bottom: 13px;
-
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -116,15 +117,19 @@
   background-color: $basic-blue-color;
   outline: none;
   cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: #ffffff;
     color: $basic-blue-text;
+    transition: color 0.5s ease, background-color 0.5s ease;
   }
+
   &:active {
     background-color: #ffffff;
     color: $basic-blue-text;
     opacity: 0.6;
+    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
   }
 }
 
@@ -137,6 +142,10 @@
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback__consent label {
+  cursor: pointer;
 }
 
 .feedback__consent input[type="checkbox"] {
@@ -171,11 +180,14 @@
   background-position: center;
 }
 
+.feedback__consent input[type="checkbox"]:focus + label,
+.feedback__consent input[type="checkbox"]:hover + label,
 .feedback__consent label:hover,
 .feedback__consent label:focus {
   color: rgba(255, 255, 255, 1);
 }
 
+.feedback__consent input[type="checkbox"]:active + label,
 .feedback__consent label:active {
   color: rgba(255, 255, 255, 0.7);
 }

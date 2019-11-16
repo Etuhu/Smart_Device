@@ -1,13 +1,11 @@
 .page-header {
   padding-top: 30px;
   background: url("../../img/boards@1x.png") 86.6% 71% no-repeat,
-    // url("../../img/boards@1x.png") 1038px 258px no-repeat,
-      url("../../img/triangle-small.svg") 1054px 475px no-repeat,
-    url("../../img/triangle-large.svg") 1106px 277px no-repeat, url("../../img/dot.svg") 1102px 272px no-repeat, url("../../img/dot.svg") 1652px 272px no-repeat, url("../../img/dot.svg") 1377px 748px no-repeat, url("../../img/dot.svg") 1212px 749px no-repeat, url("../../img/dot.svg") 1051px 471px no-repeat,
-    // url("../../img/triangle-small.svg") 66.8% 79.5% no-repeat,
-      // url("../../img/triangle-large.svg") 81.9% 69.3% no-repeat,
-      url("../../img/promo-bg@1x.png") 0 0 no-repeat,
+    url("../../img/triangle-mid-dotted.svg") 66.7% 79.7% no-repeat,
+    url("../../img/triangle-large-dotted.svg") 82% 69.2% no-repeat,
+    url("../../img/promo-bg@1x.png") 0 0 no-repeat,
     #1b2d37;
+  background-size: 37%, 17.2%, 29.4%, auto;
 }
 
 .page-header__container {
@@ -27,17 +25,14 @@
   outline: none;
 }
 
-.page-header__logo-link:hover .logo__image #Vector_6,
-.page-header__logo-link:focus .logo__image #Vector_6,
-.page-header__logo-link:hover .logo__image #Vector_5,
-.page-header__logo-link:focus .logo__image #Vector_5,
-.page-header__logo-link:hover .logo__image #Vector_4,
-.page-header__logo-link:focus .logo__image #Vector_4 {
+.page-header__logo-link:hover .logo__lighting {
   fill: #ffffff;
+  transition: fill 0.5s ease;
 }
 
 .page-header__logo-link:active .logo__image {
   opacity: 0.6;
+  transition: opacity 0.5s ease;
 }
 
 .page-header__promo {

@@ -31,14 +31,16 @@
   border: 1px solid $basic-blue-color;
   color: $basic-blue-text;
   outline: none;
-    &:hover,
-    &:focus {
-      background-color: $basic-blue-color;
-      color: $basic-white-text;
-    }
-    &:active {
-      background-color: $basic-blue-color;
-      color: $basic-white-text;
-      opacity: 0.6;
-    }
+
+  &:hover,
+  &:focus {
+    background-color: $basic-blue-color;
+    color: $basic-white-text;
+  }
+
+  &:active {
+    background-color: $basic-blue-color;
+    color: $basic-white-text;
+    opacity: 0.6;
+  }
 }

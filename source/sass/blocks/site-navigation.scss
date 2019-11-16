@@ -1,0 +1,33 @@
+.site-navigation {
+  @include list-reset;
+}
+
+.site-navigation--large {
+  min-width: 240px;
+  margin-right: 14%;
+}
+
+.site-navigation__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+  text-decoration: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  &:active {
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+  }
+}
+
+.site-navigation--small .site-navigation__link {
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
