@@ -41,3 +41,18 @@
   margin-left: auto;
   padding-right: 8px;
 }
+
+@media (max-width: 1023px) {
+  .footer-bottom__slim {
+    display: none;
+  }
+
+  .footer-bottom__item--link {
+    margin-left: 2px;
+  }
+
+  .footer-bottom__item--developer {
+    margin-left: auto;
+    padding-right: 0;
+  }
+}

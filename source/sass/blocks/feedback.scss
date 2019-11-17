@@ -191,3 +191,52 @@
 .feedback__consent label:active {
   color: rgba(255, 255, 255, 0.7);
 }
+
+@media (max-width: 1023px) {
+  .feedback {
+    background: $basic-blue-color;
+  }
+
+  .feedback__container {
+    padding-top: 79px;
+  }
+
+  .feedback__image {
+    display: none;
+  }
+
+  .feedback__content {
+    width: 100%;
+    padding-left: 63px;
+    margin-bottom: 103px;
+  }
+
+  .feedback__title {
+    @include basic-title-tablet;
+    margin-bottom: 16px;
+  }
+
+  .feedback__note {
+    margin-bottom: 54px;
+  }
+
+  .feedback__text-field {
+    width: 47.3%;
+    margin-bottom: 42px;
+  }
+
+  .feedback__text-field input,
+  .feedback__form textarea {
+    padding-bottom: 19px;
+  }
+
+  .feedback__form textarea {
+    min-height: 160px;
+    margin-bottom: 44px;
+  }
+
+  .feedback__form button {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+}

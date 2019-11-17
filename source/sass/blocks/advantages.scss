@@ -4,3 +4,10 @@
   margin-top: 12px;
   padding-left: 17px;
 }
+
+@media (max-width: 1023px) {
+  .advantages__list {
+    width: 100%;
+    padding-left: 0;
+  }
+}

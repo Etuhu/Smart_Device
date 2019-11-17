@@ -2,8 +2,29 @@
   display: none;
   width: 37px;
   height: 13px;
+  margin-top: 13px;
   border: 0;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  border-color: $basic-blue-color;
+  transition: border-color 0.5s ease;
+}
+
+.menu-toggle:active {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+
+@media (max-width: 1023px) {
+  .menu-toggle {
+    display: block;
+  }
 }

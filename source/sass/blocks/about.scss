@@ -23,6 +23,10 @@
   margin-bottom: 21px;
 }
 
+.about__clipper {
+  display: none;
+}
+
 .about__button {
   width: 179px;
   margin-top: 17px;
@@ -42,5 +46,41 @@
     background-color: $basic-blue-color;
     color: $basic-white-text;
     opacity: 0.6;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about__container.container {
+    width: calc(100% - 50px);
+    padding-top: 28px;
+    padding-bottom: 83px;
+    padding-right: 0;
+
+    background-image: url("../../img/year-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 3px 35px;
+  }
+
+  .about__title {
+    @include basic-title-tablet;
+    color: $basic-grey-text;
+    margin-bottom: 25px;
+  }
+
+  .about__text {
+    padding-left: 4px;
+  }
+
+  .about__clipper {
+    display: inline;
+  }
+
+  .about__clip-text {
+    display: none;
+  }
+
+  .about__button {
+    margin-top: 19px;
+    margin-left: 4px;
   }
 }

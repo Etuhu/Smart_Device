@@ -1,11 +1,10 @@
 .page-content {
   padding-top: 100px;
-  background:
-    url("../../img/dot-grey.svg") 290px 597px no-repeat,
-    url("../../img/dot-grey.svg") 290px 1147px no-repeat,
-    url("../../img/triangle-main-large-left.svg") 0 603px no-repeat,
-    url("../../img/dot-grey.svg") 830px 849px no-repeat,
-    url("../../img/triangle-main-large-right.svg") 597px 306px no-repeat,
-    url("../../img/triangle-main-small-left.svg") 202px 45px no-repeat,
-    url("../../img/triangle-main-small-right.svg") 1556px 396px no-repeat;
+  background: url("../../img/dot-grey.svg") 290px 597px no-repeat, url("../../img/dot-grey.svg") 290px 1147px no-repeat, url("../../img/triangle-main-large-left.svg") 0 603px no-repeat, url("../../img/dot-grey.svg") 830px 849px no-repeat, url("../../img/triangle-main-large-right.svg") 597px 306px no-repeat, url("../../img/triangle-main-small-left.svg") 202px 45px no-repeat, url("../../img/triangle-main-small-right.svg") 1556px 396px no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .page-content {
+    padding-top: 42px;
+  }
 }

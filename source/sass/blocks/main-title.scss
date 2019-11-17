@@ -1,6 +1,6 @@
 .main-title {
   margin: 0;
-  padding-left: 18px;
+  margin-left: 18px;
 }
 
 .main-title__item {
@@ -36,5 +36,28 @@
     width: 66px;
     height: 2px;
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-title {
+    margin-left: 63px;
+  }
+
+  .main-title__item--basic {
+    margin-bottom: 29px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .main-title__item--sup {
+    padding-left: 51px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      top: 16px;
+      width: 33px;
+    }
   }
 }

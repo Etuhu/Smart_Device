@@ -80,3 +80,49 @@
   cursor: pointer;
   outline: none;
 }
+
+@media (max-width: 1023px) {
+  .offers {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 720px;
+    max-width: 100%;
+  }
+
+  .offers__item {
+    max-width: 100%;
+    width: 720px;
+    height: 256px;
+    margin-bottom: 45px;
+  }
+
+  .offers__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .offers__item--production {
+    width: 715px;
+  }
+
+  .offers__title {
+    top: 40px;
+    left: 6.3%;
+  }
+
+  .offers__item--illumination .offers__title {
+    top: 52px;
+  }
+
+  .offers__item--production .offers__link {
+    background-image: url("../../img/production-tablet@1x.jpg");
+  }
+
+  .offers__item--montage .offers__link {
+    background-image: url("../../img/montage-tablet@1x.jpg");
+  }
+
+  .offers__item--illumination .offers__link {
+    background-image: url("../../img/illumination-tablet@1x.jpg");
+  }
+}

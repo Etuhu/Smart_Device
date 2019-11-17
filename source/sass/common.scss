@@ -67,6 +67,16 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+@mixin basic-title-tablet {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

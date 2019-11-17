@@ -55,3 +55,23 @@
     transition: color opacity 0.5s ease, opacity 0.5s ease;
   }
 }
+
+@media (max-width: 1023px) {
+  .main-title__item--basic {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo-block__title {
+    margin-bottom: 55px;
+  }
+
+  .promo-block__button {
+    width: 379px;
+    margin-left: 114px;
+  }
+
+  .promo-block__note {
+    display: none;
+  }
+}

@@ -67,3 +67,66 @@
 .features__item:focus .features__description {
   color: $basic-white-text;
 }
+
+@media (max-width: 1023px) {
+  .features__item {
+    width: 47.9%;
+    padding-top: 23px;
+    padding-bottom: 3px;
+    padding-right: 2.7%;
+    border-left: 2px solid $basic-blue-color;
+  }
+
+  .features__item--timing,
+  .features__item--vendor {
+    min-height: 306px;
+  }
+
+  .features__item--privacy,
+  .features__item--price {
+    min-height: 232px;
+    padding-top: 25px;
+  }
+
+  .features__item:first-child,
+  .features__item:nth-child(3n) {
+    margin-right: 4.2%;
+  }
+
+  .features__icon {
+    margin-bottom: 1px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .features__icon--timing {
+    width: 29.4px;
+    height: 35.5px;
+  }
+
+  .features__icon--vendor {
+    margin-bottom: 4px;
+  }
+
+  .features__icon--privacy {
+    margin-bottom: 3px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .features__icon--price {
+    margin-bottom: 4px;
+  }
+
+  .features__description {
+    margin-top: 10px;
+  }
+
+  .features__item--privacy .features__description {
+    margin-top: 15px;
+  }
+
+  .features__item--price .features__description {
+    margin-top: 7px;
+  }
+}
