@@ -12,10 +12,37 @@
   color: #1b2d37;
 }
 
+.office-contacts__toggle {
+  display: none;
+}
+
 .office-contacts__text {
   margin: 0;
   font-size: 15px;
   line-height: 25px;
   color: #1b2d37;
   opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .office-contacts__title {
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .office-contacts__toggle {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+  }
+
+  .office-contacts__text {
+    padding-right: 15%;
+  }
 }

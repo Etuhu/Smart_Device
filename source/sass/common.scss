@@ -76,6 +76,14 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+@mixin basic-title-mobile {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  color: #ffffff;
+}
 
 @mixin list-reset {
   margin: 0;

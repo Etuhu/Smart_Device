@@ -22,9 +22,14 @@
   transition: opacity 0.5s ease;
 }
 
-
 @media (max-width: 1023px) {
   .menu-toggle {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    margin-top: 14px;
   }
 }

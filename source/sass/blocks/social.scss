@@ -40,3 +40,12 @@
     margin-right: 10.5%;
   }
 }
+
+@media (max-width: 767px) {
+  .social__list {
+    margin-left: 0;
+    margin-top: 19px;
+    width: 112px;
+    justify-content: space-between;
+  }
+}

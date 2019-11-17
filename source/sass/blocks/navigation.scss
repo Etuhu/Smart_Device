@@ -16,3 +16,41 @@
   text-transform: uppercase;
   color: #1b2d37;
 }
+
+.navigation__toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+
+  .navigation__title {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .navigation__toggle {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+  }
+
+  .navigation__toggle::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #c4c4c4;
+    transform: rotate(90deg);
+  }
+}

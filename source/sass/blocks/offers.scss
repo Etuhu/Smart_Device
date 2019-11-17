@@ -30,6 +30,10 @@
   margin-right: 30px;
 }
 
+.offers__item .offers__link {
+  background-repeat: no-repeat;
+}
+
 .offers__item--production .offers__link {
   background-color: #24333b;
   background-image: url("../../img/production@1x.jpg");
@@ -124,5 +128,34 @@
 
   .offers__item--illumination .offers__link {
     background-image: url("../../img/illumination-tablet@1x.jpg");
+  }
+}
+
+@media (max-width: 767px) {
+  .offers__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .offers__title {
+    top: 20px;
+    left: 12%;
+  }
+
+  .offers__item--illumination .offers__title {
+    top: 30px;
+  }
+
+  .offers__item--production .offers__link {
+    background-image: url("../../img/production-mobile@1x.jpg");
+  }
+
+  .offers__item--montage .offers__link {
+    background-image: url("../../img/montage-mobile@1x.jpg");
+  }
+
+  .offers__item--illumination .offers__link {
+    background-image: url("../../img/illumination-mobile@1x.jpg");
   }
 }

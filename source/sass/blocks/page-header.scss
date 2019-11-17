@@ -72,3 +72,28 @@
     margin-bottom: 108px;
   }
 }
+
+@media (max-width: 767px) {
+  .page-header {
+    padding-top: 6px;
+  }
+
+  .page-header__container {
+    padding-bottom: 20px;
+  }
+
+  .page-header__logo-link {
+    width: 50px;
+    margin-top: 11px;
+    margin-left: 2px;
+  }
+
+  .page-header__logo-link .logo__image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .page-header__menu {
+    margin-bottom: 231px;
+  }
+}

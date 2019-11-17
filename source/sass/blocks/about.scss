@@ -80,7 +80,38 @@
   }
 
   .about__button {
+    width: 33.5%;
     margin-top: 19px;
     margin-left: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__container.container {
+    width: calc(100% - 28px);
+    padding-top: 37px;
+    padding-left: 0;
+    padding-bottom: 65px;
+    background: 0;
+  }
+
+  .about__title {
+    @include basic-title-mobile;
+    color: $basic-grey-text;
+    margin-bottom: 21px;
+  }
+
+  .about__text {
+    padding-left: 3px;
+  }
+
+  .about__text:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  .about__button {
+    width: 61.5%;
+    margin-top: 7px;
+    margin-left: 3px;
   }
 }

@@ -56,3 +56,25 @@
     padding-right: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom__item {
+    width: 100%;
+  }
+
+  .footer-bottom__item--confidencial {
+    width: 217px;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom__item--developer {
+    width: 192px;
+    margin-left: 0;
+  }
+}

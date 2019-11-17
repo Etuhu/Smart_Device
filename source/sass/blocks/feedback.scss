@@ -240,3 +240,66 @@
     padding-bottom: 14px;
   }
 }
+
+@media (max-width: 767px) {
+  .feedback__title {
+    @include basic-title-mobile;
+    margin-bottom: 13px;
+  }
+
+  .feedback__container {
+    padding-top: 29px;
+  }
+
+  .feedback__content {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 42px;
+  }
+
+  .feedback__note {
+    padding-left: 0;
+    margin-bottom: 26px;
+  }
+
+  .feedback__form {
+    padding-left: 0;
+  }
+
+  .feedback__text-field {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  .feedback__text-field input,
+  .feedback__form textarea {
+    padding-left: 17px;
+  }
+
+  .feedback__form textarea {
+    min-height: 104px;
+    margin-bottom: 30px;
+  }
+
+  .feedback__form button {
+    width: 100%;
+  }
+
+  .feedback__consent {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .feedback__consent label {
+    display: block;
+    padding-left: 34px;
+  }
+
+  .feedback__consent label::after {
+    top: 1px;
+    left: 0;
+    width: 17px;
+  }
+}

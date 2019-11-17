@@ -61,3 +61,26 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .main-title {
+    margin-left: 0;
+  }
+
+  .main-title__item--basic {
+    margin-bottom: 27px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-title__item--sup {
+    // padding-left: 51px;
+    font-size: 16px;
+    line-height: 25px;
+
+    &::before {
+      top: 15px;
+      width: 33px;
+    }
+  }
+}

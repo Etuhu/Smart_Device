@@ -35,3 +35,17 @@
     margin-bottom: 49px;
   }
 }
+
+@media (max-width: 767px) {
+  .products__container {
+    padding-bottom: 34px;
+  }
+
+  .products__title {
+    @include basic-title-mobile;
+    width: 96%;
+    padding-right: 0;
+    padding-left: 4px;
+    margin-bottom: 42px;
+  }
+}

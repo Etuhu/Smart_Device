@@ -34,3 +34,19 @@
     margin-right: 7.4%;
   }
 }
+
+@media (max-width: 767px) {
+  .logo__description--header {
+    display: none;
+  }
+
+  .logo--footer {
+    width: 216px;
+    margin-right: 0;
+  }
+
+  .logo--footer .logo__image {
+    width: 52px;
+    height: 52px;
+  }
+}

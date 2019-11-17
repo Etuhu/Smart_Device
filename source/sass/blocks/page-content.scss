@@ -8,3 +8,9 @@
     padding-top: 42px;
   }
 }
+
+@media (max-width: 767px) {
+  .page-content {
+    padding-top: 25px;
+  }
+}

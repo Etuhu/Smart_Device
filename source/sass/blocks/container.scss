@@ -9,3 +9,9 @@
     max-width: calc(100% - 50px);
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+}

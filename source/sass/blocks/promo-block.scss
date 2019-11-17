@@ -29,6 +29,10 @@
   }
 }
 
+.promo-block__button--short {
+  display: none;
+}
+
 .promo-block__note {
   position: absolute;
   bottom: -98px;
@@ -57,11 +61,6 @@
 }
 
 @media (max-width: 1023px) {
-  .main-title__item--basic {
-    font-size: 60px;
-    line-height: 70px;
-  }
-
   .promo-block__title {
     margin-bottom: 55px;
   }
@@ -73,5 +72,24 @@
 
   .promo-block__note {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo-block__title {
+    margin-bottom: 40px;
+  }
+
+  .promo-block__button {
+    width: 99%;
+    margin-left: 3px;
+  }
+
+  .promo-block__button--long {
+    display: none;
+  }
+
+  .promo-block__button--short {
+    display: inline-block;
   }
 }
