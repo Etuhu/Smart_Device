@@ -22,12 +22,15 @@
 }
 
 @media (max-width: 767px) {
+  .navigation {
+    position: relative;
+  }
+
   .navigation__list {
     display: none;
   }
 
   .navigation__title {
-    position: relative;
     padding-left: 0;
   }
 
@@ -36,10 +39,21 @@
     top: 7px;
     right: 2px;
     display: block;
+    border: 0;
     width: 16px;
     height: 1px;
     background-color: #c4c4c4;
     cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: #1b2d37;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .navigation__toggle::after {
@@ -52,5 +66,10 @@
     height: 1px;
     background-color: #c4c4c4;
     transform: rotate(90deg);
+  }
+
+  .navigation__toggle:hover::after,
+  .navigation__toggle:focus::after {
+    background-color: #1b2d37;
   }
 }

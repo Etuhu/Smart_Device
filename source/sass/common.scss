@@ -22,9 +22,7 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+@mixin visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -40,7 +38,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.button {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  @include visually-hidden;
+}
+
+@mixin basic-button {
   display: inline-block;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -56,6 +60,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-decoration: none;
   transition: color 0.5s ease, background-color 0.5s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  @include basic-button;
 }
 
 @mixin basic-title {
@@ -89,4 +99,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin basic-placeholder {
+  font-family: "PT Mono", "Courier", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $basic-white-text;
+  text-transform: none;
 }

@@ -192,16 +192,16 @@
           <div class="feedback__content">
             <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
             <span class="feedback__note">Мы проконсультируем Вас бесплатно</span>
-            <form action="https://echo.htmlacademy.ru" class="feedback__form" method="post">
-              <div class="feedback__text-field feedback__text-field--username">
+            <form action="#" class="feedback__form basic-form" method="post">
+              <div class="basic-form__text-field feedback__text-field feedback__text-field--username">
                 <input type="text" placeholder="Имя" name="username" required="required">
               </div>
-              <div class="feedback__text-field feedback__text-field--phonenumber">
+              <div class="basic-form__text-field feedback__text-field feedback__text-field--phonenumber">
                 <input type="tel" placeholder="Телефон" name="phonenumber" required="required">
               </div>
               <textarea name="question" placeholder="Ваш вопрос" required="required"></textarea>
               <button type="submit">ЗАДАТЬ ВОПРОС</button>
-              <div class="feedback__consent">
+              <div class="basic-form__consent feedback__consent">
                 <input type="checkbox" name="consent" value="Согласен" id="consent" checked="checked">
                 <label for="consent">Я согласен на обработку персональных данных</label>
               </div>
@@ -300,7 +300,8 @@
           </div>
         </div>
         <section class="page-footer__navigation navigation">
-          <h3 class="navigation__title">РАЗДЕЛЫ САЙТА<span class="navigation__toggle"></span></h3>
+          <h3 class="navigation__title">РАЗДЕЛЫ САЙТА</h3>
+          <button class="navigation__toggle" tabindex="0" aria-label="Свернуть/развернуть разделы сайта"></button>
           <nav class="navigation__list">
             <ul class="site-navigation site-navigation--large">
               <li class="site-navigation__item"><a href="#" class="site-navigation__link">О компании</a></li>
@@ -316,7 +317,8 @@
           </nav>
         </section>
         <section class="page-footer__contacts office-contacts">
-          <h3 class="office-contacts__title">НАШ ОФИС<span class="office-contacts__toggle"></span></h3>
+          <h3 class="office-contacts__title">НАШ ОФИС</h3>
+          <button class="office-contacts__toggle" tabindex="0" aria-label="Свернуть/развернуть контактные данные"></button>
           <p class="office-contacts__text">
             г. Мытищи, Олимпийский проспект, д.10<br> +7&nbsp;(495)&nbsp;589-40-50<br>
             +7 (925) 003-87-67<br>
@@ -333,5 +335,27 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper"></div>
+      <div class="modal__content">
+        <button class="modal__close-button"></button>
+        <h2 class="modal__title">Закажите звонок</h2>
+        <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="#" class="modal__form basic-form" method="post">
+          <div class="basic-form__text-field modal__text-field modal__text-field--username">
+            <input type="text" placeholder="Имя" name="username" required="required">
+          </div>
+          <div class="basic-form__text-field modal__text-field modal__text-field--phonenumber">
+            <input type="tel" placeholder="Телефон" name="phonenumber" required="required">
+          </div>
+          <textarea name="question" placeholder="Ваш вопрос" required="required"></textarea>
+          <button type="submit">ОТПРАВИТЬ</button>
+          <div class="basic-form__consent modal__consent">
+            <input type="checkbox" name="consent" value="Согласен" id="modal-consent" checked="checked">
+            <label for="modal-consent">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

@@ -25,21 +25,35 @@
 }
 
 @media (max-width: 767px) {
-  .office-contacts__title {
+  .office-contacts {
     position: relative;
+  }
+
+  .office-contacts__title {
     padding-left: 0;
     margin-bottom: 32px;
   }
 
   .office-contacts__toggle {
     position: absolute;
+    display: block;
     top: 7px;
     right: 2px;
-    display: block;
     width: 16px;
     height: 1px;
+    border: 0;
     background-color: #c4c4c4;
     cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: #1b2d37;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .office-contacts__text {
