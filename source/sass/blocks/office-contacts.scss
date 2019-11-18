@@ -35,28 +35,19 @@
   }
 
   .office-contacts__toggle {
-    position: absolute;
-    display: block;
-    top: 7px;
+    top: 0;
     right: 2px;
-    width: 16px;
-    height: 1px;
-    border: 0;
-    background-color: #c4c4c4;
-    cursor: pointer;
-    outline: none;
-
-    &:hover,
-    &:focus {
-      background-color: #1b2d37;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
   }
 
   .office-contacts__text {
     padding-right: 15%;
+  }
+
+  .office-contacts__text--visible {
+    display: block;
+  }
+
+  .office-contacts__text--unvisible {
+    display: none;
   }
 }

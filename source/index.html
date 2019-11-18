@@ -364,8 +364,8 @@
         </div>
         <section class="page-footer__navigation navigation">
           <h3 class="navigation__title">РАЗДЕЛЫ САЙТА</h3>
-          <button class="navigation__toggle" tabindex="0" aria-label="Свернуть/развернуть разделы сайта"></button>
-          <nav class="navigation__list">
+          <button class="navigation__toggle display-toggle display-toggle--open" tabindex="0" aria-label="Свернуть/развернуть разделы сайта"></button>
+          <nav class="navigation__list navigation__list--unvisible">
             <ul class="site-navigation site-navigation--large">
               <li class="site-navigation__item"><a href="#" class="site-navigation__link">О компании</a></li>
               <li class="site-navigation__item"><a href="#" class="site-navigation__link">Продукты</a></li>
@@ -381,8 +381,8 @@
         </section>
         <section class="page-footer__contacts office-contacts">
           <h3 class="office-contacts__title">НАШ ОФИС</h3>
-          <button class="office-contacts__toggle" tabindex="0" aria-label="Свернуть/развернуть контактные данные"></button>
-          <p class="office-contacts__text">
+          <button class="office-contacts__toggle display-toggle display-toggle--close" tabindex="0" aria-label="Свернуть/развернуть контактные данные"></button>
+          <p class="office-contacts__text office-contacts__text--visible">
             г. Мытищи, Олимпийский проспект, д.10<br> +7&nbsp;(495)&nbsp;589-40-50<br />
             +7 (925) 003-87-67<br />
             +7 (926) 926-080-79
@@ -399,7 +399,7 @@
       </div>
     </footer>
     <section class="modal">
-      <div class="modal__wrapper"></div>
+      <div class="modal__overlay"></div>
       <div class="modal__content">
         <button class="modal__close-button"></button>
         <h2 class="modal__title">Закажите звонок</h2>
@@ -420,5 +420,6 @@
         </form>
       </div>
     </section>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

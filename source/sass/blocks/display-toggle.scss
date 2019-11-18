@@ -1,0 +1,39 @@
+.display-toggle {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.display-toggle--close {
+  background-image: url("../../img/close-toggle.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/close-toggle-hover.svg");
+  }
+}
+
+.display-toggle--open {
+  background-image: url("../../img/open-toggle.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../../img/open-toggle-hover.svg");
+  }
+}
