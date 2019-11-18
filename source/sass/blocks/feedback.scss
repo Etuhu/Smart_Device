@@ -1,8 +1,5 @@
 .feedback {
-  // background: url("../../img/triangle-large-dotted.svg") 18.4% 51% no-repeat, url("../../img/triangle-mid-dotted.svg") 12.4% 77% no-repeat, url("../../img/triangle-mid-right.svg") 101.1% 108% no-repeat, url("../../img/triangle-small-left.svg") 100.2% 10.5% no-repeat, $basic-blue-color;
-  // background-size: 29.4%, 17.3%, 18%, 13.8%;
   background: url("../../img/triangle-dotted.svg") right 84.8% top 94px no-repeat, url("../../img/triangle-mid-right.svg") left 101.1% top 287px no-repeat, url("../../img/triangle-small-left.svg") left 100.3% top 42px no-repeat, $basic-blue-color;
-  // background-size: 29.4%, 18%, 13.8%;
 }
 
 .feedback__container {
@@ -19,10 +16,13 @@
 .feedback__image {
   width: 50%;
   background-image: url("../../img/airplane@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/airplane@2x.png");
+    background-size: 511px auto;
+  }
   background-repeat: no-repeat;
   background-position: right 43.5% top 71px;
-  // background-position: 56.5% 24.3%;
-  // background-size: 71%;
 }
 
 .feedback__content {
