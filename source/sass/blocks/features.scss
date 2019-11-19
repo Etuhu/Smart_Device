@@ -28,7 +28,7 @@
 }
 
 .features__item:first-child,
-.features__item:nth-child(3n) {
+.features__item:nth-child(2n + 1) {
   margin-right: 2.6%;
 }
 
@@ -89,7 +89,7 @@
   }
 
   .features__item:first-child,
-  .features__item:nth-child(3n) {
+  .features__item:nth-child(2n + 1) {
     margin-right: 4.2%;
   }
 
@@ -138,8 +138,6 @@
     margin-right: 0;
     margin-bottom: 20px;
     padding-left: 25px;
-    // padding-top: 23px;
-    // padding-bottom: 3px;
     padding-right: 15px;
   }
 

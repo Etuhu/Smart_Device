@@ -6,10 +6,10 @@
   padding-bottom: 110px;
   padding-right: 5px;
 
-  background-image: url("../../img/year@1x.png");
+  background-image: url("../img/year@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/year@2x.png");
+    background-image: url("../img/year@2x.png");
     background-size: 220px auto;
   }
   background-repeat: no-repeat;
@@ -61,10 +61,10 @@
     padding-bottom: 83px;
     padding-right: 0;
 
-    background-image: url("../../img/year-tablet@1x.png");
+    background-image: url("../img/year-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/year-tablet@2x.png");
+      background-image: url("../img/year-tablet@2x.png");
       background-size: 243px auto;
       background-position: -25px 26px;
     }

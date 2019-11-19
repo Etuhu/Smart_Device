@@ -129,7 +129,7 @@
 }
 
 .basic-form__consent input[type="checkbox"]:checked + label::after {
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

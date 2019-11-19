@@ -5,10 +5,9 @@ var modalOverlay = document.querySelector('.modal__overlay');
 var modalActivator = document.querySelector('.contacts-menu__button');
 var closeModal = document.querySelector('.modal__close-button');
 var form = modal.querySelector('.modal__form');
-var username = form.querySelector('[name=username]');
-var phone = form.querySelector('[name=phonenumber]');
-var letter = form.querySelector('[name=question]');
-var button = form.querySelector('[type=submit]');
+var username = form.querySelector('#modal-username');
+var phone = form.querySelector('#modal-phonenumber');
+var letter = form.querySelector('#modal-question');
 var isStorageSupport = true;
 var storageUsername = '';
 var storagePhone = '';
@@ -25,23 +24,15 @@ try {
 modalActivator.addEventListener('click', function (evt) {
   evt.preventDefault();
   modal.classList.add('modal--active');
+  username.focus();
   if (storageUsername) {
     username.value = storageUsername;
-    phone.focus();
-  } else {
-    username.focus();
   }
   if (storagePhone) {
     phone.value = storagePhone;
-    letter.focus();
-  } else {
-    phone.focus();
   }
   if (storageLetter) {
     letter.value = storageLetter;
-    button.focus();
-  } else {
-    letter.focus();
   }
 });
 

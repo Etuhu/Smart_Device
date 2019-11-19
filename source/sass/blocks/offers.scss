@@ -36,30 +36,30 @@
 
 .offers__item--production .offers__link {
   background-color: #24333b;
-  background-image: url("../../img/production@1x.jpg");
+  background-image: url("../img/production@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/production@2x.jpg");
+    background-image: url("../img/production@2x.jpg");
     background-size: 370px auto;
   }
 }
 
 .offers__item--montage .offers__link {
   background-color: #25333b;
-  background-image: url("../../img/montage@1x.jpg");
+  background-image: url("../img/montage@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/montage@2x.jpg");
+    background-image: url("../img/montage@2x.jpg");
     background-size: 370px auto;
   }
 }
 
 .offers__item--illumination .offers__link {
   background-color: #37464e;
-  background-image: url("../../img/illumination@1x.jpg");
+  background-image: url("../img/illumination@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/illumination@2x.jpg");
+    background-image: url("../img/illumination@2x.jpg");
     background-size: 370px auto;
   }
 }
@@ -95,7 +95,7 @@
   width: 63px;
   height: 63px;
 
-  background: url("../../img/arrow.svg") center no-repeat, $basic-blue-color;
+  background: url("../img/arrow.svg") center no-repeat, $basic-blue-color;
   cursor: pointer;
   outline: none;
 }
@@ -134,28 +134,28 @@
   }
 
   .offers__item--production .offers__link {
-    background-image: url("../../img/production-tablet@1x.jpg");
+    background-image: url("../img/production-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-tablet@2x.jpg");
+      background-image: url("../img/production-tablet@2x.jpg");
       background-size: 715px auto;
     }
   }
 
   .offers__item--montage .offers__link {
-    background-image: url("../../img/montage-tablet@1x.jpg");
+    background-image: url("../img/montage-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/montage-tablet@2x.jpg");
+      background-image: url("../img/montage-tablet@2x.jpg");
       background-size: 720px auto;
     }
   }
 
   .offers__item--illumination .offers__link {
-    background-image: url("../../img/illumination-tablet@1x.jpg");
+    background-image: url("../img/illumination-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/illumination-tablet@2x.jpg");
+      background-image: url("../img/illumination-tablet@2x.jpg");
       background-size: 720px auto;
     }
   }
@@ -178,28 +178,28 @@
   }
 
   .offers__item--production .offers__link {
-    background-image: url("../../img/production-mobile@1x.jpg");
+    background-image: url("../img/production-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-mobile@2x.jpg");
+      background-image: url("../img/production-mobile@2x.jpg");
       background-size: 290px auto;
     }
   }
 
   .offers__item--montage .offers__link {
-    background-image: url("../../img/montage-mobile@1x.jpg");
+    background-image: url("../img/montage-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/montage-mobile@2x.jpg");
+      background-image: url("../img/montage-mobile@2x.jpg");
       background-size: 290px auto;
     }
   }
 
   .offers__item--illumination .offers__link {
-    background-image: url("../../img/illumination-mobile@1x.jpg");
+    background-image: url("../img/illumination-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/illumination-mobile@2x.jpg");
+      background-image: url("../img/illumination-mobile@2x.jpg");
       background-size: 290px auto;
     }
   }

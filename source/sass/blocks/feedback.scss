@@ -1,5 +1,5 @@
 .feedback {
-  background: url("../../img/triangle-dotted.svg") right 84.8% top 94px no-repeat, url("../../img/triangle-mid-right.svg") left 101.1% top 287px no-repeat, url("../../img/triangle-small-left.svg") left 100.3% top 42px no-repeat, $basic-blue-color;
+  background: url("../img/triangle-dotted.svg") right 84.8% top 94px no-repeat, url("../img/triangle-mid-right.svg") left 101.1% top 287px no-repeat, url("../img/triangle-small-left.svg") left 100.3% top 42px no-repeat, $basic-blue-color;
 }
 
 .feedback__container {
@@ -15,10 +15,10 @@
 
 .feedback__image {
   width: 50%;
-  background-image: url("../../img/airplane@1x.png");
+  background-image: url("../img/airplane@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/airplane@2x.png");
+    background-image: url("../img/airplane@2x.png");
     background-size: 511px auto;
   }
   background-repeat: no-repeat;
@@ -64,6 +64,7 @@
 .feedback__form textarea {
   min-height: 154px;
   margin-bottom: 43px;
+  padding-top: 10px;
 }
 
 .feedback__form button {
