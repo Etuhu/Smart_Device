@@ -26,12 +26,13 @@
     position: relative;
   }
 
-  .navigation__list--unvisible {
-    display: none;
+  .navigation__list {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .navigation__list--visible {
-    display: flex;
+  .navigation__list--unvisible {
+    display: none;
   }
 
   .navigation__title {

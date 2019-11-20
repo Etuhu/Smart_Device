@@ -119,7 +119,6 @@ textarea {
   outline-offset: -2px;
 }
 
-
 ::-webkit-file-upload-button {
   font: inherit;
 }
@@ -144,6 +143,7 @@ template {
 html {
   box-sizing: border-box;
   line-height: 1.15;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -155,7 +155,6 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  max-width: 1920px;
 
   font-family: "PT Mono", "Courier", monospace;
   font-size: 16px;
@@ -211,6 +210,10 @@ input[type="radio"].visually-hidden {
 
 .button {
   @include basic-button;
+}
+
+.scroll-hidden {
+  overflow: hidden;
 }
 
 @mixin basic-title {

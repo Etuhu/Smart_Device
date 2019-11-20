@@ -1,7 +1,7 @@
 .offers {
   @include list-reset;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .offers__title {
@@ -23,6 +23,7 @@
   width: calc(33.3% - 30px);
   max-width: 370px;
   height: 620px;
+  margin-bottom: 30px;
   outline: none;
 }
 

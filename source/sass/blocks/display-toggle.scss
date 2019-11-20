@@ -1,38 +1,29 @@
-.display-toggle {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: none;
+@media (max-width: 767px) {
+  .display-toggle {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/close-toggle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
 
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
+    &:focus {
+      background-image: url("../img/close-toggle-hover.svg");
+      opacity: 1;
+      transform: scale(1.1);
+    }
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-}
+  .display-toggle--minimized {
+    background-image: url("../img/open-toggle.svg");
 
-.display-toggle--close {
-  background-image: url("../img/close-toggle.svg");
-
-  &:hover,
-  &:focus {
-    background-image: url("../img/close-toggle-hover.svg");
-  }
-}
-
-.display-toggle--open {
-  background-image: url("../img/open-toggle.svg");
-
-  &:hover,
-  &:focus {
-    background-image: url("../img/open-toggle-hover.svg");
+    &:focus {
+      background-image: url("../img/open-toggle-hover.svg");
+    }
   }
 }

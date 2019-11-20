@@ -27,25 +27,23 @@
 .modal__content {
   position: absolute;
   display: block;
-  top: 136px;
   left: 50%;
+  top: 50%;
   z-index: 920;
   width: 490px;
   padding: 30px 39px;
   padding-bottom: 37px;
-  margin-left: -237px;
   background-color: $basic-blue-color;
+  transform: translate(-50%, -50%);
 
   @media (max-width: 767px) {
     width: 390px;
     padding: 30px 20px;
-    margin-left: -195px;
   }
 
   @media (max-width: 500px) {
     width: 320px;
     padding: 30px 15px;
-    margin-left: -160px;
   }
 }
 
@@ -101,11 +99,15 @@
 
 .modal__text-field input {
   padding-bottom: 20px;
+  appearance: none;
+  border-radius: 0;
 }
 
 .modal__form textarea {
   min-height: 104px;
   margin-bottom: 30px;
+  appearance: none;
+  border-radius: 0;
 }
 
 .modal__form button {

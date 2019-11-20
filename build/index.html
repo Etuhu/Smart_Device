@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Smart Device. Производство и монтаж печатных плат. Комплектующие для светотехники.">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -86,17 +87,17 @@
               </svg>
               <p class="contacts-menu__text contacts-menu__text--call">+7 (495) 000 52 52</p>
             </a>
-            <a href="#" class="contacts-menu__button button">ЗАКАЗАТЬ ЗВОНОК</a>
+            <a href="#" class="contacts-menu__button button">Заказать звонок</a>
           </div>
         </div>
         <section class="page-header__promo promo-block">
           <h1 class="promo-block__title main-title">
-            <span class="main-title__item main-title__item--basic">ПЕЧАТНЫЕ ПЛАТЫ</span>
+            <span class="main-title__item main-title__item--basic">Печатные платы</span>
             <span class="main-title__item main-title__item--sup">производство и монтаж, поставка комплектующих, блоков и модулей</span>
           </h1>
-          <a href="#" class="promo-block__button promo-block__button--long button">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
-          <a href="#" class="promo-block__button promo-block__button--short button">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
-          <button class="promo-block__note" type="button">Скролл вниз</button>
+          <a href="#" class="promo-block__button promo-block__button--long button">Получить бесплатную консультацию</a>
+          <a href="#" class="promo-block__button promo-block__button--short button">Бесплатная консультация</a>
+          <a href="#" class="promo-block__note">Скролл вниз</a>
         </section>
       </div>
     </header>
@@ -157,7 +158,7 @@
           <h2 class="about__title">О компании</h2>
           <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__clipper">..</span><span class="about__clip-text"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-          <a href="#" class="about__button button">ПОДРОБНЕЕ</a>
+          <a href="#" class="about__button button">Подробнее</a>
         </div>
       </section>
       <section class="products wrapper">
@@ -166,21 +167,21 @@
           <ul class="products__list offers">
             <li class="offers__item offers__item--production">
               <h3 class="offers__title">Производство<br> печатных плат</h3>
-              <a href="#" class="offers__link">
+              <a href="#" class="offers__link" aria-label="Узнать о производстве печатных плат">
               </a>
-              <a href="#" class="offers__sup-link" tabindex="-1"></a>
+              <a href="#" class="offers__sup-link" tabindex="-1" aria-label="Узнать о производстве печатных плат"></a>
             </li>
             <li class="offers__item offers__item--montage">
               <h3 class="offers__title">Монтаж печатных<br> плат</h3>
-              <a href="#" class="offers__link">
+              <a href="#" class="offers__link" aria-label="Узнать о монтаже печатных плат">
               </a>
-              <a href="#" class="offers__sup-link" tabindex="-1"></a>
+              <a href="#" class="offers__sup-link" tabindex="-1" aria-label="Узнать о монтаже печатных плат"></a>
             </li>
             <li class="offers__item offers__item--illumination">
               <h3 class="offers__title">Комплектующие<br> для светотехники</h3>
-              <a href="#" class="offers__link">
+              <a href="#" class="offers__link" aria-label="Узнать о комплектующих для светотехники">
               </a>
-              <a href="#" class="offers__sup-link" tabindex="-1"></a>
+              <a href="#" class="offers__sup-link" tabindex="-1" aria-label="Узнать о комплектующих для светотехники"></a>
             </li>
           </ul>
         </div>
@@ -193,15 +194,18 @@
             <span class="feedback__note">Мы проконсультируем Вас бесплатно</span>
             <form action="#" class="feedback__form basic-form" method="post">
               <div class="basic-form__text-field feedback__text-field feedback__text-field--username">
-                <input type="text" placeholder="Имя" name="username" required="required">
+                <label for="feedback-username" class="visually-hidden">Имя</label>
+                <input type="text" placeholder="Имя" name="username" id="feedback-username" required="required">
               </div>
               <div class="basic-form__text-field feedback__text-field feedback__text-field--phonenumber">
-                <input type="tel" placeholder="Телефон" name="phonenumber" required="required">
+                <label for="feedback-phonenumber" class="visually-hidden">Телефон</label>
+                <input type="tel" placeholder="Телефон" name="phonenumber" id="feedback-phonenumber" required="required">
               </div>
-              <textarea name="question" placeholder="Ваш вопрос" required="required"></textarea>
-              <button type="submit">ЗАДАТЬ ВОПРОС</button>
+              <label for="feedback-question" class="visually-hidden">Ваш вопрос</label>
+              <textarea name="question" placeholder="Ваш вопрос" id="feedback-question" required="required"></textarea>
+              <button type="submit">Задать вопрос</button>
               <div class="basic-form__consent feedback__consent">
-                <input type="checkbox" name="consent" value="Согласен" id="consent" checked="checked">
+                <input type="checkbox" name="consent" value="Согласен" id="consent" checked="checked" required="required">
                 <label for="consent">Я согласен на обработку персональных данных</label>
               </div>
             </form>
@@ -212,7 +216,7 @@
     <footer class="page-footer wrapper">
       <div class="page-footer__container container">
         <div class="page-footer__start">
-          <a href="#" class="page-footer__logo-link logo logo--footer">
+          <a href="#" class="page-footer__logo-link logo logo--footer" aria-label="Логотип Smart Device">
             <svg class="logo__image" width="52" height="52">
               <g>
                   <g>
@@ -299,8 +303,8 @@
           </div>
         </div>
         <section class="page-footer__navigation navigation">
-          <h3 class="navigation__title">РАЗДЕЛЫ САЙТА</h3>
-          <button class="navigation__toggle display-toggle display-toggle--open" type="button" aria-label="Свернуть/развернуть разделы сайта"></button>
+          <h3 class="navigation__title">Разделы сайта</h3>
+          <button class="navigation__toggle display-toggle display-toggle--minimized" type="button" aria-label="Свернуть/развернуть разделы сайта"></button>
           <nav class="navigation__list navigation__list--unvisible">
             <ul class="site-navigation site-navigation--large">
               <li class="site-navigation__item"><a href="#" class="site-navigation__link">О компании</a></li>
@@ -316,21 +320,21 @@
           </nav>
         </section>
         <section class="page-footer__contacts office-contacts">
-          <h3 class="office-contacts__title">НАШ ОФИС</h3>
-          <button class="office-contacts__toggle display-toggle display-toggle--close" type="button" aria-label="Свернуть/развернуть контактные данные"></button>
-          <p class="office-contacts__text office-contacts__text--visible">
-            г. Мытищи, Олимпийский проспект, д.10<br> +7&nbsp;(495)&nbsp;589-40-50<br>
-            +7 (925) 003-87-67<br>
-            +7 (926) 926-080-79
+          <h3 class="office-contacts__title">Наш офис</h3>
+          <button class="office-contacts__toggle display-toggle" type="button" aria-label="Свернуть/развернуть контактные данные"></button>
+          <p class="office-contacts__text">
+            <a href="#" class="office-contacts__link">г. Мытищи, Олимпийский проспект, д.10</a><br> <a href="tel:+74955894050" class="office-contacts__link">+7&nbsp;(495)&nbsp;589-40-50</a><br>
+            <a href="tel:+79250038767" class="office-contacts__link">+7 (925) 003-87-67</a><br>
+            <a href="tel:+792692608079" class="office-contacts__link">+7 (926) 926-080-79</a>
           </p>
         </section>
         <div class="page-footer__end footer-bottom">
           <div class="footer-bottom__slim">
-            <span class="footer-bottom__item">ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
+            <span class="footer-bottom__item">Все права защищены</span>
             <span class="footer-bottom__item page-footer__copyright page-footer__copyright--bottom">1999-2018 SD Service Devices</span>
           </div>
-          <a href="#" class="footer-bottom__item footer-bottom__item--link footer-bottom__item--confidencial">УСЛОВИЯ КОНФИДЕНЦИАЛЬНОСТИ</a>
-          <a href="#" class="footer-bottom__item footer-bottom__item--link footer-bottom__item--developer">DEVELOPED BY WOW STUDIO</a>
+          <a href="#" class="footer-bottom__item footer-bottom__item--link footer-bottom__item--confidencial">Условия конфиденциальности</a>
+          <a href="#" class="footer-bottom__item footer-bottom__item--link footer-bottom__item--developer">Developed by wow studio</a>
         </div>
       </div>
     </footer>
@@ -342,20 +346,24 @@
         <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="#" class="modal__form basic-form" method="post">
           <div class="basic-form__text-field modal__text-field modal__text-field--username">
+            <label for="modal-username" class="visually-hidden">Имя</label>
             <input type="text" placeholder="Имя" name="username" id="modal-username" required="required">
           </div>
           <div class="basic-form__text-field modal__text-field modal__text-field--phonenumber">
+            <label for="modal-phonenumber" class="visually-hidden">Телефон</label>
             <input type="tel" placeholder="Телефон" name="phonenumber" id="modal-phonenumber" required="required">
           </div>
+          <label for="modal-question" class="visually-hidden">Ваш вопрос</label>
           <textarea name="question" placeholder="Ваш вопрос" id="modal-question" required="required"></textarea>
-          <button type="submit">ОТПРАВИТЬ</button>
+          <button type="submit">Отправить</button>
           <div class="basic-form__consent modal__consent">
-            <input type="checkbox" name="consent" value="Согласен" id="modal-consent" checked="checked">
+            <input type="checkbox" name="consent" value="Согласен" id="modal-consent" checked="checked" required="required">
             <label for="modal-consent">Я согласен на обработку персональных данных</label>
           </div>
         </form>
       </div>
     </section>
+    <script type="text/javascript" src="js/imask.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

@@ -2,20 +2,21 @@
   padding-top: 30px;
 
   @media (min-width: 1641px) {
-    background: url("../img/boards@1x.png") right 160px top 258px no-repeat, url("../img/triangle-dotted.svg") right 241px top 272px no-repeat, url("../img/promo-bg@1x.png") 0 0 repeat-y, #1b2d37;
+    background: url("../img/boards@1x.png") right 160px top 258px no-repeat, url("../img/triangle-dotted.svg") right 241px top 272px no-repeat, url("../img/promo-bg@1x.png") 5px 3px repeat-y, #1b2d37;
+    background-size: 705px auto, auto, 100% auto;
   }
 
   @media (min-width: 1181px) and (max-width: 1640px) {
-    background: url("../img/boards@1x.png") left 787px top 258px no-repeat, url("../img/triangle-dotted.svg") left 800px top 272px no-repeat, url("../img/promo-bg@1x.png") 0 0 repeat-y, #1b2d37;
+    background: url("../img/boards@1x.png") left 787px top 258px no-repeat, url("../img/triangle-dotted.svg") left 800px top 272px no-repeat, url("../img/promo-bg@1x.png") 5px 3px repeat-y, #1b2d37;
   }
 
   @media (min-width: 1024px) and (max-width: 1180px) {
-    background: url("../img/boards@1x.png") right -355px top 258px no-repeat, url("../img/triangle-dotted.svg") right -275px top 272px no-repeat, url("../img/promo-bg@1x.png") 0 0 repeat-y, #1b2d37;
+    background: url("../img/boards@1x.png") right -355px top 258px no-repeat, url("../img/triangle-dotted.svg") right -275px top 272px no-repeat, url("../img/promo-bg@1x.png") 5px 3px repeat-y, #1b2d37;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/boards@2x.png"), url("../img/triangle-dotted.svg"), url("../img/promo-bg@2x.png");
-    background-size: 705px auto, auto, 1920px auto;
+    background-size: 705px auto, auto, 100% auto;
   }
 }
 

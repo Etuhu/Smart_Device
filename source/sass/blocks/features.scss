@@ -30,6 +30,10 @@
 .features__item:first-child,
 .features__item:nth-child(2n + 1) {
   margin-right: 2.6%;
+
+  @media (max-width: 1440px) {
+    margin-right: 2%;
+  }
 }
 
 .features__icon {

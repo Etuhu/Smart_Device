@@ -167,6 +167,17 @@
     }
   }
 
+  .page-footer--shift {
+    &::after {
+      box-shadow: 0 260px 0 #626962;
+    }
+  }
+
+  .page-footer__end--shrink {
+    margin-top: 3px;
+    padding-top: 19px;
+  }
+
   .page-footer__social {
     justify-content: center;
     width: 100%;
